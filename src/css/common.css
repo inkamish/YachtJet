@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: #0e1823;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.main-btn {
+  background-color: #1b414b;
+  color: #fbfbfb;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding: 14px 32px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: #fff;
+  color: #1b414b;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: -0.02em;
+  color: #1b414b;
+}
+
+/* Usage - class="section-title white" */
+.section-title.white {
+  color: #fbfbfb;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .main-btn {
+    font-size: 18px;
+    line-height: 1.2375;
+    padding: 16px 40px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+/* Desktop large */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

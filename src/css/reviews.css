@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+.section-review {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 75px;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-review {
+    padding-bottom: 150px;
+  }
+}
+
+.container-review {
+  width: auto;
+}
+
+.section-title-additional {
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0 auto 25px;
+  max-width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title-additional {
+    max-width: 714px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title-additional {
+    max-width: 854px;
+  }
+}
+
+.section-paragraph-general {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  margin-bottom: 25px;
+  opacity: 0.4;
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-paragraph-general {
+    max-width: 571px;
+    font-size: 14px;
+  }
+}
+
+.review-list {
+  display: flex;
+  box-sizing: border-box;
+  list-style: none;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  padding-top: 40px;
+}
+
+.review-card-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 24px;
+  padding: 32px 8px;
+  max-width: 335px;
+  background: #fbfbfb;
+}
+
+@media screen and (max-width: 767px) {
+  .review-list li:not(:first-child) {
+    display: none;
+  }
+
+  .review-card-list {
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .review-list li:last-child {
+    display: none;
+  }
+
+  .review-card-list {
+    max-width: 335px;
+  }
+}
+
+.review-card-img-container {
+  width: calc((100% - 32) / 2);
+}
+
+@media screen and (min-width: 1280px) {
+  .review-card-img-container {
+    width: calc((100% - 52) / 3);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .review-card-img-container {
+    width: calc((100% - 64) / 3);
+  }
+}
+
+.review-card-img {
+  margin: 0 auto 24px;
+}
+
+.review-card-header {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #040306;
+  margin-bottom: 8px;
+}
+
+.review-card-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(4, 3, 6, 0.4);
+  overflow-wrap: break-word;
+  margin: 8px;
+  overflow: hidden;
+}

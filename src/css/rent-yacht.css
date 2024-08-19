@@ -1,0 +1,189 @@
+/* */
+
+.form {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.section-form {
+  padding-bottom: 80px;
+}
+
+.rent-img-container {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.yacht-photo {
+  width: 335px;
+  height: auto;
+  margin: auto;
+}
+
+.form-wrapper {
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+.form-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+
+.form-yacht {
+  margin-bottom: 80px;
+}
+
+.form-imput {
+  background-color: transparent;
+  color: #fbfbfb;
+  padding-left: 18px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  letter-spacing: 0.04em;
+  box-sizing: border-box;
+  width: 100%;
+  height: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 18px;
+  outline: none;
+}
+
+.form-imput:focus,
+.form-comment-text:focus,
+.form-imput:focus::placeholder,
+.form-comment-text:focus::placeholder {
+  border-color: #fbfbfb;
+}
+
+.form-comment-text {
+  padding: 14px 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 108px;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  resize: none;
+}
+.form-button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  background-color: #1b414b;
+  border-radius: 15px;
+
+  min-width: 122px;
+  height: 46px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
+@media screen and (min-width: 768px) {
+  .form-yacht {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .yacht-photo {
+    width: 728px;
+    height: 534px;
+  }
+
+  .form-text {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+
+  .form-imput {
+    width: 472px;
+    height: 54px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .form-comment-text {
+    width: 472px;
+    height: 116px;
+    font-size: 14px;
+    line-height: 1.29;
+    margin-bottom: 50px;
+  }
+
+  .form-button {
+    min-width: 194px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+  .form-wrapper {
+    max-width: none;
+  }
+
+  .section-form {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form {
+    flex-direction: row;
+  }
+
+  .form-wrapper {
+    margin-left: 50px;
+    min-width: 472px;
+  }
+
+  .form-imput,
+  .form-comment-text {
+    width: 100%;
+  }
+
+  .form-yacht label {
+    width: 100%;
+  }
+
+  .form-comment-text {
+    margin-bottom: 40px;
+  }
+
+  .form-button {
+    margin-bottom: 0;
+  }
+
+  .yacht-photo {
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}

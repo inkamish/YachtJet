@@ -1,0 +1,144 @@
+.about-section {
+  margin-bottom: 80px;
+  margin-top: -50px;
+}
+
+.about-section .container {
+  max-width: 335px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-img {
+  margin-top: -30px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.description {
+  background: #fbfbfb;
+  border-radius: 24px 24px 0 0;
+}
+.left {
+  padding-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.about-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #1b414b;
+  margin-bottom: 40px;
+  max-width: 295px;
+}
+
+.p-container {
+  padding: 0px 20px 65px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.p-first {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #1b414b;
+}
+
+.p-second {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #040306;
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    margin-bottom: 150px;
+  }
+
+  .description {
+    margin: auto;
+  }
+
+  .about-title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    margin-bottom: 50px;
+    max-width: 536px;
+    padding-left: 32px;
+    padding-top: 50px;
+  }
+
+  .p-container {
+    padding-left: 32px;
+    max-width: 389px;
+    padding-bottom: 75px;
+  }
+
+  .p-first {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+  }
+
+  .p-second {
+    font-size: 13px;
+    line-height: 1.15;
+  }
+
+  .left {
+    padding: 0;
+  }
+
+  .about-section .container {
+    max-width: 704px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-section .container {
+    max-width: 1180px;
+  }
+  .description {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px 0 125px;
+  }
+
+  .about-title {
+    padding-left: 50px;
+    padding-top: 0;
+  }
+
+  .p-container {
+    padding-right: 50px;
+    padding-bottom: 0;
+
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-section .container {
+    max-width: 1340px;
+  }
+}
